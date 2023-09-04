@@ -31,9 +31,9 @@ class DiskYandexLocators():
                          'button[class="Button2 Button2_view_action Button2_size_m confirmation-dialog__button confirmation-dialog__button_submit "]')
     LISTING_ITEMS_CHILD_ELEMENTS = (By.XPATH,
                                     "//div[@class='listing__items']//div[contains(@class, 'listing-item_type_file')]")
-    Header_User = (By.XPATH, "//div[@class='PSHeader-User PSHeader-User_noUserName promozavr-anchor-user']")
-
-
+    BUTTON_USER = (By.XPATH, "//img[@class='user-pic__image']")
+    BUTTON_LOG_OUT = (By.XPATH, "//a[@class='menu__item menu__item_type_link legouser__menu-item legouser__menu-item_action_exit']")
+    
 
 class EditorPageLocators():
     NAME_FILE = (By.XPATH, "//title")

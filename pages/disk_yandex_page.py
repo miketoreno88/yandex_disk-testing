@@ -39,3 +39,9 @@ class DiskYandexPage(BasePage):
         file_locator = (By.XPATH, f"//span[contains(text(), '{file_name}.docx')]")
         name_created_file = name_created_file = self.wait_for_element(file_locator).text
         return name_created_file
+    
+    def log_out(self):
+        self.button_user = self.wait_for_element(DiskYandexLocators.BUTTON_USER)
+        self.button_log_out = self.wait_for_element(DiskYandexLocators.BUTTON_LOG_OUT)
+        self.button_user.click()
+        self.button_log_out.click()

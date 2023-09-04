@@ -52,3 +52,5 @@ class TestCreateFile:
 
         assert sum_elements_befor == sum_elements_after - 1, "Файл не создан"
         assert name_file + '.docx' == name_created_file, "Неверное имя файла"
+
+        disk_page.log_out()
